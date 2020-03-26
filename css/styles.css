@@ -48,19 +48,20 @@ p {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   padding-left: 20px;
- color: #19999E
+ color: Black;
+ font-weight: bold;
 
 }
 #link {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
-font-weight: 500;
+font-weight: bold;
   padding-right: 20px;
-  color: #19999E;
+  color: Black;
 }
 #toggler, button{
-  border-color: #19999E;
-  color: #19999E;
+  border-color: Black;
+  font-weight: bold;
 }
 .pro {
   text-decoration: underline;
