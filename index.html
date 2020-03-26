@@ -4,16 +4,39 @@
 <head>
   <meta charset="utf-8">
   <title>Aaron Black</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
+
   <link rel="icon" href="AB.png">
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div class="top-container">
-    <img class="logo" src="AB.png" alt="">
 
-    <h1>Not your average <span class="pro">pro</span>grammer</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+          <a id="mine"class="navbar-brand" href="">Aaron Black</a>
+          <button id="toggler"class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span id="burger"class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a id="link"class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a id="link"class="nav-link" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a id="link"class="nav-link" href="#resume">Resumé</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
 
   </div>
   <div class="middle-container">
@@ -25,19 +48,19 @@
     <hr>
     <div class="skills">
       <h2>My Skills.</h2>
-      <div class="skill-row">
+      <div id="projects"class="skill-row">
         <img class="skillsPic" src="https://image.flaticon.com/icons/svg/2210/2210172.svg" alt="design">
         <h3>Web Design and Development</h3>
         <p>I started learning to code when I started a skateboard manufacturing company so I could build my own website for e-commerce.</p>
       </div>
-      <div class="skill-row">
+      <div id="about"class="skill-row">
         <img class="businessPic" src="https://lh5.googleusercontent.com/proxy/jDiyN2fx6m7AbJ0pl2UnBdK4fCWCZGQqoZnOGnHLpuVlEfI8fWNkWNieowNy-mcKO2ixGZfBUFqP52rJ-wLIpcZNfasXH4XTKSqV-w5YUG0vp7KiVhOtFvPW5Lm58rKkvw04" alt="business">
         <h3>Business Development</h3>
         <p>I have started and built multiple businesses in multiple industries such as manufacturing, tourism and food and beverage.</p>
       </div>
     </div>
     <hr>
-    <div class="contact-me">
+    <div id="resume"class="contact-me">
       <h2>Get In Touch</h2>
       <h3>Opportunities or Questions?</h3>
       <p>Wheather you have an opportunity for me or questions you woul like to ask please get in touch.</p>
@@ -53,6 +76,10 @@
     <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
     <p class="copy">© 2020 Aaron Black.</p>
   </div>
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
 
