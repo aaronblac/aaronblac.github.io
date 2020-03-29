@@ -2,6 +2,7 @@ body {
   margin: 0;
   text-align: center;
   font-family: 'Merriweather', serif;
+  /* background-color: #f6f5f5; */
 }
 
 h1 {
@@ -31,7 +32,7 @@ hr {
   border-top: dotted;
   border-color: #EAF6F6;
   border-width: 5px;
-  height: 0px;
+  height: 0;
   width: 5%;
   margin: 100px auto;
 }
@@ -41,9 +42,7 @@ p {
   line-height: 2;
 }
 
-.navbar {
-  padding-top: 15px;
-}
+
 #mine {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
@@ -59,14 +58,30 @@ font-weight: bold;
   padding-right: 20px;
   color: Black;
 }
+#link:hover {
+  color: #ffffff ;
+}
 #toggler, button{
   border-color: Black;
   font-weight: bold;
 }
+
+.navbar {
+  padding-top: 15px;
+}
+
 .pro {
   text-decoration: underline;
 }
 
+.pj {
+  color: #66BFBF;
+}
+
+.pj:hover {
+  text-decoration: none;
+  color: #11999E;
+}
 .top-container {
   background-image: url(../images/nzhike.JPG);
   background-repeat: no-repeat;
@@ -105,10 +120,21 @@ font-weight: bold;
 .face {
   height: 200px;
   border-radius: 100%;
-  margin-top: 50px;
 }
-
-.profile p, .contact-me p {
+.profile {
+  width: 80%;
+  margin: auto;
+  padding-top: 30px;
+}
+.profile h2 {
+  margin: auto;
+}
+.profile p {
+  width: 60%;
+  margin: auto;
+  padding-bottom: 15px;
+}
+.contact-me p {
   width: 25%;
   margin: auto;
 }
