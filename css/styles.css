@@ -2,7 +2,6 @@ body {
   margin: 0;
   text-align: center;
   font-family: 'Merriweather', serif;
-  /* background-color: #f6f5f5; */
 }
 
 h1 {
@@ -40,10 +39,14 @@ hr {
 p {
   color: #40514E;
   line-height: 2;
+
 }
 
 
-#mine {
+.drop a {
+  text-decoration: none;
+}
+/* #mine {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   padding-left: 20px;
@@ -57,7 +60,8 @@ p {
 font-weight: bold;
   padding-right: 20px;
   color: Black;
-}
+} */
+
 #link:hover {
   color: #ffffff ;
 }
@@ -65,14 +69,62 @@ font-weight: bold;
   border-color: Black;
   font-weight: bold;
 }
+.top-container {
+  background-image: url(../images/black_twill.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #eaf6f6;
+  position: relative;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 
-.navbar {
-  padding-top: 15px;
 }
 
-.pro {
-  text-decoration: underline;
+.mine {
+  font-family: 'Montserrat', sans-serif;
+color: #ffffff;
+ /* font-weight: bold; */
+ font-size: 500%;
+ padding-top: 200px;
 }
+.dev {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+}
+
+.insideTop {
+  display: inline-block;
+}
+
+.row {
+  padding: 50px 50px;
+text-align: center;
+
+}
+
+.drop {
+padding: 0 20px;
+}
+.drop img {
+  height: 90px;
+}
+.labels {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  display: none;
+  padding-top: 10px;
+}
+.drop:hover h6 {
+  display: block;
+}
+/* .middle-container .sect {
+  display: none;
+
+} */
 
 .pj {
   color: #66BFBF;
@@ -82,16 +134,12 @@ font-weight: bold;
   text-decoration: none;
   color: #11999E;
 }
-.top-container {
-  background-image: url(../images/nzhike.JPG);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #eaf6f6;
-  position: relative;
-  background-size: cover;
-  height: 80vh;
+/* .show {
+  display: block;
+} */
+.prj {
+  height: 200px;
 }
-
 .skill-row {
   margin: 100px auto;
   width: 50%;
@@ -113,27 +161,41 @@ font-weight: bold;
 
 .middle-container {
   position: relative;
-  padding-top: 10px;
+  padding-top: 30px;
   padding-bottom: 50px;
 }
 
 .face {
   height: 200px;
   border-radius: 100%;
+  float:left;
+  margin: 15px ;
+
 }
 .profile {
   width: 80%;
   margin: auto;
-  padding-top: 30px;
+  padding-top: 100px;
 }
 .profile h2 {
   margin: auto;
 }
-.profile p {
+.profile p,
+.show p {
   width: 60%;
   margin: auto;
   padding-bottom: 15px;
 }
+
+/* .nws,
+.smn {
+  float: left;
+} */
+
+/* .tpr,
+.hiro {
+  float: right;
+} */
 .contact-me p {
   width: 25%;
   margin: auto;
