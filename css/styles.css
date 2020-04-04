@@ -1,7 +1,7 @@
 body {
   margin: 0;
   text-align: center;
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -134,12 +134,95 @@ padding: 0 20px;
   text-decoration: none;
   color: #11999E;
 }
-/* .show {
-  display: block;
-} */
-.prj {
+
+.middle-container {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.face {
+  height: 200px;
+  border-radius: 100%;
+  float:left;
+  margin: 15px 35px;
+
+}
+.profile {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+}
+.profile h2 {
+  margin: auto;
+}
+.profile p {
+  width: 60%;
+  margin: auto;
+  padding-bottom: 15px;
+  text-align: left;
+}
+
+.image {
+  position: relative;
+  display: inline-block;
+  max-height: 200px;
+}
+.overlay {
+  display: none;
+}
+.image:hover .overlay {
+  width:100%;
+  height: 100%;
+  background: rgba(0,0,0,.9);
+  position: absolute;
+  top:0;
+  left: 0;
+  display: inline-block;
+  box-sizing: border-box;
+    img {
+      vertical-align: top;
+    }
+}
+
+.proj h2 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.proj p {
+  width: 60%;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+  margin: 10px auto;
+}
+.proj img {
   height: 200px;
 }
+
+.proj-row {
+  margin-top: 50px;
+  /* width: 50% */
+}
+
+.show {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 0;
+}
+/* .nws,
+.smn {
+  float: left;
+  margin-left: 20%;
+  margin-right: 20px;
+}
+
+.tpr,
+.hiro {
+  float: right;
+  margin-right: 20%;
+  margin-left: 20px;
+} */
 .skill-row {
   margin: 100px auto;
   width: 50%;
@@ -158,44 +241,6 @@ padding: 0 20px;
   float: right;
   margin-left: 30px;
 }
-
-.middle-container {
-  position: relative;
-  padding-top: 30px;
-  padding-bottom: 50px;
-}
-
-.face {
-  height: 200px;
-  border-radius: 100%;
-  float:left;
-  margin: 15px ;
-
-}
-.profile {
-  width: 80%;
-  margin: auto;
-  padding-top: 100px;
-}
-.profile h2 {
-  margin: auto;
-}
-.profile p,
-.show p {
-  width: 60%;
-  margin: auto;
-  padding-bottom: 15px;
-}
-
-/* .nws,
-.smn {
-  float: left;
-} */
-
-/* .tpr,
-.hiro {
-  float: right;
-} */
 .contact-me p {
   width: 25%;
   margin: auto;
