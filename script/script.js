@@ -1,5 +1,5 @@
-$('.drop').on('click', function() {
-	$parent_box = $(this).closest('.box');
-	$parent_box.siblings().find('.sect').hide();
-	$parent_box.find('.sect').toggle();
+AOS.init({
+  duration: 500,
+  easing: 'ease-out-quart',
+  once: true
 });
