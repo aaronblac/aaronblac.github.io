@@ -6,12 +6,11 @@
   $('.contact-form').each(function () {
     var $contact_form = $(this);
     var $contact_button = $contact_form.find('.form-submit');
-    var contact_action = '/submit.php';
+    var contact_action = 'submit.php';
 
     // Display the hidden form.
     $contact_form.removeClass('hidden');
-    // Remove the "no javascript" messages
-    $('.contact-no-js').detach();
+
 
     // Wait for a mouse to move, indicating they are human.
     $('body').mousemove(function () {
@@ -36,23 +35,6 @@
       }
     });
 
-    // Mark the form as submitted.
-    $contact_button.click(function () {
-      $contact_form.addClass('js-submitted');
-    });
-
-    // Display messages.
-    if (location.search.substring(1) !== '') {
-      switch (location.search.substring(1)) {
-        case 'submitted':
-          $('.contact-submitted').removeClass('hidden');
-          break;
-
-        case 'error':
-          $('.contact-error').removeClass('hidden');
-          break;
-      }
-    }
   });
 
 })(jQuery);
