@@ -6,7 +6,7 @@
   $('.contact-form').each(function () {
     var $contact_form = $(this);
     var $contact_button = $contact_form.find('.form-submit');
-    var contact_action = 'submit.php';
+    var contact_action = '/submit.php';
 
     // Display the hidden form.
     $contact_form.removeClass('hidden');
