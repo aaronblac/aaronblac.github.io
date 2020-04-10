@@ -2,7 +2,7 @@ body {
   margin: 0;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -40,94 +40,78 @@ hr {
 p {
   color: #40514E;
   line-height: 2;
-
 }
-
 
 .drop a {
   text-decoration: none;
 }
-/* #mine {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.5rem;
-  padding-left: 20px;
- color: Black;
- font-weight: bold;
-
-}
-#link {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
-font-weight: bold;
-  padding-right: 20px;
-  color: Black;
-} */
 
 #link:hover {
-  color: #ffffff ;
+  color: #ffffff;
 }
-#toggler, button{
+
+#toggler, button {
   border-color: Black;
   font-weight: bold;
 }
+
 .top-container {
   background-image: url(../images/macbook.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #eaf6f6;
-
+  background-color: BLACK;
   background-size: cover;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 760px;
+  min-width: 720px;
   width: 100vw;
   overflow: hidden;
   margin: 0;
   padding: 0;
-
 }
 
 .mine {
   font-family: 'Montserrat', sans-serif;
-color: #ffffff;
- /* font-weight: bold; */
- font-size: 500%;
- /* padding-top: 60px; */
+  color: #ffffff;
+  font-size: 500%;
 }
+
 .dev {
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
 }
+
 .topTop {
   position: absolute;
-  top: 80px;
+  top: 60px;
   left: 90px;
 }
+
 .insideTop {
   display: inline-block;
-  /* position: absolute; */
-  padding-top: 550px;
-  padding-left: 750px ;
-
+  position: absolute;
+  bottom: 60px;
+  right: 90px;
+  top: 600px;
 }
 
 .row {
-
-text-align: center;
-
+  text-align: center;
 }
 
 .drop {
-padding: 0 20px;
+  padding: 0 20px;
 }
+
 .drop img {
   height: 90px;
 }
+
 .labels {
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   display: none;
   padding-top: 10px;
-
-
 }
 
 .drop:hover h6 {
@@ -143,29 +127,26 @@ padding: 0 20px;
   color: #11999E;
 }
 
-/* .middle-container {
-  position: relative;
-  padding-top: 30px;
-
-} */
-
 .face {
   height: 220px;
   border-radius: 100%;
-  float:right;
+  float: right;
   margin: 15px 35px;
   position: relative;
 }
+
 .profile {
   width: 80%;
   margin: auto;
   padding-top: 100px;
 }
+
 .profile h2 {
   margin: auto;
   text-align: center;
   width: 60%;
 }
+
 .profile p {
   width: 60%;
   margin: auto;
@@ -178,28 +159,27 @@ padding: 0 20px;
   display: inline-block;
   max-height: 200px;
 }
+
 .overlay {
   display: none;
 }
 
 .image:hover .overlay {
-  width:100%;
+  width: 100%;
   height: 100%;
-  background: rgba(0,0,0,.9);
+  background: rgba(0, 0, 0, .9);
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   display: inline-block;
   box-sizing: border-box;
-    /* img {
-      vertical-align: top;
-    } */
 }
 
 .proj h2 {
   margin-bottom: 0;
   padding-bottom: 0;
 }
+
 .proj p {
   width: 60%;
   color: #ffffff;
@@ -207,13 +187,13 @@ padding: 0 20px;
   text-align: center;
   margin: 10px auto;
 }
+
 .proj img {
   height: 200px;
 }
 
 .proj-row {
   margin-top: 50px;
-  /* width: 50% */
 }
 
 .show {
@@ -222,7 +202,8 @@ padding: 0 20px;
   padding-top: 0;
   padding-bottom: 0;
 }
-.work p{
+
+.work p {
   width: 60%;
   text-align: center;
   padding: 30px 0 0 0;
@@ -232,14 +213,17 @@ padding: 0 20px;
 .skillImg {
   height: 30px;
 }
+
 .graph-cont {
   margin: 0;
 }
+
 .skill-row {
   padding-top: 40px;
+  marigin: 0 15px;
 }
 
-.bar{
+.bar {
   height: 30px;
   max-width: 500px;
   margin: 0 auto 10px auto;
@@ -251,7 +235,7 @@ padding: 0 20px;
   text-align: left;
 }
 
-.bar::before{
+.bar::before {
   content: '';
   width: 100%;
   position: absolute;
@@ -262,7 +246,8 @@ padding: 0 20px;
   background: #ecf0f1;
   border-radius: 5px;
 }
-.bar::after{
+
+.bar::after {
   content: '';
   background: #66BFBF;
   height: 30px;
@@ -276,39 +261,47 @@ padding: 0 20px;
   border-bottom-left-radius: 5px;
   left: 0;
   z-index: -1;
-
 }
 
-@-webkit-keyframes bar-before{
-  0%{
+@-webkit-keyframes bar-before {
+  0% {
     width: 0px;
   }
-  100%{
+
+  100% {
     width: 100%;
   }
 }
-.bar1::after{
+
+.bar1::after {
   max-width: 85%;
 }
-.bar2::after{
+
+.bar2::after {
   max-width: 60%;
 }
-.bar3::after{
+
+.bar3::after {
   max-width: 45%;
 }
-.bar4::after{
+
+.bar4::after {
   max-width: 70%;
 }
-.bar5::after{
+
+.bar5::after {
   max-width: 80%;
 }
-.bar6::after{
-  max-width: 45%;
+
+.bar6::after {
+  max-width: 85%;
 }
-.bar7::after{
+
+.bar7::after {
   max-width: 95%;
 }
-.bar8::after{
+
+.bar8::after {
   max-width: 90%;
 }
 
@@ -318,18 +311,22 @@ padding: 0 20px;
 }
 
 .contact-me h3 {
-padding-top: 20px;
+  padding-top: 20px;
 }
+
 label {
   color: #40514E;
   margin-top: 8px;
 }
+
 .antispam {
   display: none;
 }
+
 .thnks {
   display: none;
 }
+
 .bottom-container {
   position: relative;
   padding-top: 20px;
@@ -356,6 +353,22 @@ label {
   margin-top: 10px;
 }
 
+.cv {
+  height: 100vh;
+  background-color: Black;
+}
+
+.hme {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.cvImg {
+  height: 750px;
+  padding: 10px;
+}
+
 .btn:hover {
   background-color: #66BFBF;
 }
@@ -377,4 +390,955 @@ label {
 
 .footer-link:hover {
   color: #EAF6F6;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  .drop img {
+    height: 60px;
+  }
+
+  .insideTop {
+    right: 40px;
+  }
+
+  .mine {
+    font-size: 300%;
+  }
+}
+
+/* iPhoneX */
+@media only screen and (min-device-width: 375px) and (min-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  p {
+    font-size: 200%;
+  }
+
+  .top-container {
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  .topTop {
+    left: 0;
+    right: 0;
+  }
+
+  .mine {
+    font-size: 720%;
+  }
+
+  .dev {
+    font-size: 400%;
+  }
+
+  .insideTop {
+    left: 0;
+    right: 0;
+    top: 600px;
+  }
+
+  .labels {
+    display: block;
+    padding-bottom: 20px;
+  }
+
+  .drop img {
+    height: 160px;
+  }
+
+  .profile {
+    width: 95%;
+  }
+
+  .row {
+    display: block;
+  }
+
+  .proj-row {
+    width: 90%;
+    padding: 30px;
+    margin: auto;
+  }
+
+  .barG {
+    margin: auto;
+    width: 85%;
+  }
+
+  .bar {
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .footer-link {
+    font-size: 1.5rem;
+  }
+
+  .hme {
+    left: 0;
+    right: 0;
+    top: 100px;
+  }
+
+  .cvImg {
+    width: 95%;
+    height: auto;
+    padding-top: 400px;
+  }
+
+  .lbl {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  p {
+    font-size: 120%;
+  }
+
+  .top-container {
+    min-height: 100vh;
+    height: 100vh;
+    background-position: center;
+  }
+
+  .topTop {
+    top: 0;
+    left: 30px;
+  }
+
+  .mine {
+    font-size: 400%;
+  }
+
+  .insideTop {
+    top: 340px;
+    right: 25px;
+  }
+
+  .drop img {
+    height: 70px;
+  }
+
+  .labels {
+    display: block;
+  }
+
+  .profile {
+    width: 90%;
+  }
+
+  .skill-row {
+    display: block;
+    margin: auto;
+  }
+
+  .barG {
+    margin: auto;
+  }
+
+  .footer-link {
+    font-size: 1.2rem;
+  }
+
+  .lbl {
+    display: none;
+  }
+}
+
+/* iPhone 6, 6s, 7, 8 */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  p {
+    font-size: 200%;
+  }
+
+  h2 {
+    font-size: 300%;
+  }
+
+  .top-container {
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  .topTop {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 80px;
+  }
+
+  .mine {
+    font-size: 720%;
+  }
+
+  .dev {
+    font-size: 400%;
+  }
+
+  .insideTop {
+    left: 0;
+    right: 0;
+    top: 420px;
+  }
+
+  .labels {
+    display: block;
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+  }
+
+  .drop img {
+    height: 160px;
+  }
+
+  .profile {
+    width: 95%;
+  }
+
+  .row {
+    display: block;
+  }
+
+  .proj-row {
+    width: 90%;
+    padding: 30px;
+    margin: auto;
+  }
+
+  .barG {
+    margin: auto;
+    width: 85%;
+  }
+
+  .bar {
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .container {
+    width: 60%;
+  }
+
+  .footer-link {
+    font-size: 1.5rem;
+  }
+
+  .hme {
+    left: 0;
+    right: 0;
+    top: 100px;
+  }
+
+  .cvImg {
+    width: 95%;
+    height: auto;
+    padding-top: 400px;
+  }
+
+  .lbl {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  p {
+    font-size: 120%;
+  }
+
+  .top-container {
+    min-height: 100vh;
+    height: 100vh;
+    background-position: center;
+  }
+
+  .topTop {
+    top: 20px;
+    left: 30px;
+  }
+
+  .mine {
+    font-size: 400%;
+  }
+
+  .insideTop {
+    top: 400px;
+    right: 25px;
+  }
+
+  .drop img {
+    height: 70px;
+  }
+
+  .labels {
+    display: block;
+  }
+
+  .profile {
+    width: 90%;
+  }
+
+  .skill-row {
+    display: block;
+    margin: auto;
+  }
+
+  .barG {
+    margin: auto;
+  }
+
+  .footer-link {
+    font-size: 1.5rem;
+  }
+
+  .lbl {
+    display: none;
+  }
+}
+
+/* iPhone 6+,7+,8+ */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .insideTop {
+    top: 400px;
+    right: 25px;
+  }
+
+  .lbl {
+    display: none;
+  }
+}
+
+/* Galaxy s4, s5, s6, note3 */
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  p {
+    font-size: 200%;
+  }
+
+  h2 {
+    font-size: 300%;
+  }
+
+  .top-container {
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  .topTop {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 80px;
+  }
+
+  .mine {
+    font-size: 720%;
+  }
+
+  .dev {
+    font-size: 400%;
+  }
+
+  .insideTop {
+    left: 0;
+    right: 0;
+    top: 420px;
+  }
+
+  .labels {
+    display: block;
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+  }
+
+  .drop img {
+    height: 160px;
+  }
+
+  .profile {
+    width: 95%;
+  }
+
+  .row {
+    display: block;
+  }
+
+  .proj-row {
+    width: 90%;
+    padding: 30px;
+    margin: auto;
+  }
+
+  .barG {
+    margin: auto;
+    width: 85%;
+  }
+
+  .bar {
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .container {
+    width: 60%;
+  }
+
+  .footer-link {
+    font-size: 1.5rem;
+  }
+
+  .hme {
+    left: 0;
+    right: 0;
+    top: 100px;
+  }
+
+  .cvImg {
+    width: 95%;
+    height: auto;
+    padding-top: 400px;
+  }
+
+  .lbl {
+    display: none;
+  }
+}
+
+/* Google Pixel xl */
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: portrait) {
+  p {
+    font-size: 200%;
+  }
+
+  h2 {
+    font-size: 300%;
+  }
+
+  .top-container {
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  .topTop {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 80px;
+  }
+
+  .mine {
+    font-size: 720%;
+  }
+
+  .dev {
+    font-size: 400%;
+  }
+
+  .insideTop {
+    left: 0;
+    right: 0;
+    top: 420px;
+  }
+
+  .labels {
+    display: block;
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+  }
+
+  .drop img {
+    height: 160px;
+  }
+
+  .profile {
+    width: 95%;
+  }
+
+  .row {
+    display: block;
+  }
+
+  .proj-row {
+    width: 90%;
+    padding: 30px;
+    margin: auto;
+  }
+
+  .barG {
+    margin: auto;
+    width: 85%;
+  }
+
+  .bar {
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .container {
+    width: 60%;
+  }
+
+  .footer-link {
+    font-size: 1.5rem;
+  }
+
+  .hme {
+    left: 0;
+    right: 0;
+    top: 100px;
+  }
+
+  .cvImg {
+    width: 95%;
+    height: auto;
+    padding-top: 400px;
+  }
+
+  .lbl {
+    display: none;
+  }
+}
+
+/* google pixel2 xl */
+@media screen and (device-width: 823px) and (device-height: 411px) and (-webkit-device-pixel-ratio: 3.5) and (orientation: landscape) {
+  .top-container {
+    min-height: 100vh;
+    height: 100vh;
+    background-position: center;
+  }
+
+  .topTop {
+    top: 20px;
+    left: 30px;
+  }
+
+  .mine {
+    font-size: 400%;
+  }
+
+  .insideTop {
+    top: 360px;
+    right: 25px;
+  }
+
+  .drop img {
+    height: 70px;
+  }
+
+  .labels {
+    display: block;
+  }
+
+  .skill-row {
+    display: block;
+    margin: auto;
+  }
+
+  .barG {
+    margin: auto;
+  }
+
+  .footer-link {
+    font-size: 1.2rem;
+  }
+
+  .lbl {
+    display: none;
+  }
+}
+
+@media screen and (device-width: 411px) and (device-height: 823px) and (-webkit-device-pixel-ratio: 3.5) and (orientation: portrait) {
+  .lbl {
+    display: none;
+  }
+}
+
+/* Windows Phone */
+@media screen and (device-width: 480px) and (device-height: 800px) and (orientation: portrait) {
+  .drop img {
+    height: 120px;
+  }
+
+  .hme {
+    top: 40px;
+  }
+
+  .cvImg {
+    width: 100%;
+    padding-top: 200px;
+  }
+}
+
+/* lg optimus */
+@media screen and (device-width: 384px) and (device-height: 640px) and (orientation: portrait) {
+  p {
+    font-size: 200%;
+  }
+
+  h2 {
+    font-size: 300%;
+  }
+
+  .top-container {
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  .topTop {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 80px;
+  }
+
+  .mine {
+    font-size: 720%;
+  }
+
+  .dev {
+    font-size: 400%;
+  }
+
+  .insideTop {
+    left: 0;
+    right: 0;
+    top: 420px;
+  }
+
+  .labels {
+    display: block;
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+  }
+
+  .drop img {
+    height: 140px;
+  }
+
+  .profile {
+    width: 95%;
+  }
+
+  .row {
+    display: block;
+  }
+
+  .proj-row {
+    width: 90%;
+    padding: 30px;
+    margin: auto;
+  }
+
+  .barG {
+    margin: auto;
+    width: 85%;
+  }
+
+  .bar {
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .container {
+    width: 60%;
+  }
+
+  .footer-link {
+    font-size: 1.5rem;
+  }
+
+  .hme {
+    left: 0;
+    right: 0;
+    top: 100px;
+  }
+
+  .cvImg {
+    width: 95%;
+    height: auto;
+    padding-top: 400px;
+  }
+
+  .lbl {
+    display: none;
+  }
+}
+
+@media screen and (device-width: 640px) and (device-height: 384px) and (orientation: landscape) {
+  .top-container {
+    min-height: 100vh;
+    height: 100vh;
+    background-position: center;
+  }
+
+  .topTop {
+    top: 20px;
+    left: 30px;
+  }
+
+  .mine {
+    font-size: 400%;
+  }
+
+  .insideTop {
+    top: 460px;
+    right: 25px;
+  }
+
+  .drop img {
+    height: 70px;
+  }
+
+  .labels {
+    display: block;
+  }
+
+  .skill-row {
+    display: block;
+    margin: auto;
+  }
+
+  .barG {
+    margin: auto;
+  }
+
+  .footer-link {
+    font-size: 1.2rem;
+  }
+
+  .lbl {
+    display: none;
+  }
+}
+
+/* iPad 1,2,mini,air */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  p {
+    font-size: 200%;
+  }
+
+  .top-container {
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  .topTop {
+    left: 0;
+    right: 0;
+  }
+
+  .mine {
+    font-size: 650%;
+  }
+
+  .dev {
+    font-size: 300%;
+  }
+
+  .insideTop {
+    left: 0;
+    right: 0;
+    top: 320px;
+  }
+
+  .labels {
+    display: block;
+    padding-bottom: 20px;
+  }
+
+  .drop img {
+    height: 100px;
+  }
+
+  .profile {
+    width: 95%;
+  }
+
+  .row {
+    display: block;
+  }
+
+  .proj-row {
+    width: 90%;
+    padding: 30px;
+    margin: auto;
+  }
+
+  .barG {
+    margin: auto;
+    width: 85%;
+  }
+
+  .bar {
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .footer-link {
+    font-size: 1.5rem;
+  }
+
+  .hme img {
+    height: 90px;
+  }
+
+  .lbl {
+    display: none;
+  }
+
+  .hme {
+    left: 0;
+    right: 0;
+    top: 30px;
+  }
+
+  .cvImg {
+    width: 90%;
+    height: auto;
+    padding-top: 150px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  p {
+    font-size: 1.2rem;
+  }
+
+  .profile {
+    width: 95%
+  }
+
+  .topTop {
+    top: 80px;
+    left: 50px;
+  }
+
+  .insideTop {
+    top: 580px;
+    right: 25px;
+  }
+
+  .drop img {
+    height: 100px;
+  }
+
+  .labels {
+    display: block;
+  }
+
+  .skill-row {
+    display: block;
+    margin: auto;
+  }
+
+  .barG {
+    margin: auto;
+  }
+
+  .footer-link {
+    font-size: 1.2rem;
+  }
+
+  .lbl {
+    display: none;
+  }
+}
+
+/* iPad Pro 12.9" */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  p {
+    font-size: 1.5rem;
+  }
+
+  .profile {
+    width: 95%
+  }
+
+  .topTop {
+    top: 80px;
+    left: 0;
+    right: 0;
+  }
+
+  .insideTop {
+    top: 350px;
+    right: 25px;
+  }
+
+  .drop img {
+    height: 100px;
+  }
+
+  .labels {
+    display: block;
+  }
+
+  .skill-row {
+    display: block;
+    margin: auto;
+  }
+
+  .barG {
+    margin: auto;
+  }
+
+  .footer-link {
+    font-size: 1.2rem;
+  }
+
+  .lbl {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  p {
+    font-size: 1.5rem;
+  }
+
+  .profile {
+    width: 95%
+  }
+
+  .topTop {
+    top: 80px;
+    left: 50px;
+  }
+
+  .mine {
+    font-size: 650%;
+  }
+
+  .insideTop {
+    top: 800px;
+    right: 45px;
+  }
+
+  .drop img {
+    height: 120px;
+  }
+
+  .labels {
+    display: block;
+  }
+
+  .skill-row {
+    display: block;
+    margin: auto;
+  }
+
+  .barG {
+    margin: auto;
+  }
+
+  .footer-link {
+    font-size: 1.2rem;
+  }
+
+  .lbl {
+    display: none;
+  }
+
+  .cvImg {
+    height: 100%;
+  }
 }
