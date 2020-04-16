@@ -1,8 +1,10 @@
+html {
+  overflow-x: hidden;
+}
 body {
   margin: 0;
-  text-align: center;
   font-family: 'Montserrat', sans-serif;
-  overflow-x: hidden;
+  width: 100%;
 }
 
 h1 {
@@ -19,6 +21,7 @@ h2 {
   font-size: 2.5rem;
   font-family: 'Montserrat', sans-serif;
   padding-bottom: 10px;
+  text-align: center;
 }
 
 h3 {
@@ -40,6 +43,8 @@ hr {
 p {
   color: #40514E;
   line-height: 2;
+  text-align: center;
+  font-size: 1.1rem;
 }
 
 .drop a {
@@ -47,7 +52,7 @@ p {
 }
 
 #link:hover {
-  color: #ffffff;
+  color: #f2f2f2;
 }
 
 #toggler, button {
@@ -59,63 +64,62 @@ p {
   background-image: url(../images/macbook.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: BLACK;
   background-size: cover;
+  opacity: .92;
   height: 100vh;
-  min-height: 760px;
-  min-width: 720px;
   width: 100vw;
   overflow: hidden;
   margin: 0;
   padding: 0;
+  text-align: left;
 }
 
 .mine {
   font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
+  color: #f2f2f2;
   font-size: 500%;
 }
 
 .dev {
   font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
+  color: #f2f2f2;
+  font-size: 230%;
 }
 
 .topTop {
-  position: absolute;
-  top: 60px;
-  left: 90px;
+  padding-left: 80px;
 }
 
 .insideTop {
   display: inline-block;
-  position: absolute;
-  bottom: 60px;
-  right: 90px;
-  top: 600px;
+  padding-left: 80px;
 }
 
 .row {
   text-align: center;
+  margin: auto
 }
 
 .drop {
-  padding: 0 20px;
+  padding: 10px 10px;
 }
 
 .drop img {
-  height: 90px;
+  height: 45px;
 }
 
 .labels {
-  color: #ffffff;
+  color: #f2f2f2;
   font-family: 'Montserrat', sans-serif;
-  display: none;
+  font-size: 10px;
+  display: block;
   padding-top: 10px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
 }
 
 .drop:hover h6 {
-  display: block;
+  opacity: 1;
 }
 
 .pj {
@@ -138,7 +142,7 @@ p {
 .profile {
   width: 80%;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .profile h2 {
@@ -154,25 +158,6 @@ p {
   text-align: left;
 }
 
-.image {
-  position: relative;
-  display: inline-block;
-}
-
-.overlay {
-  display: none;
-}
-
-.image:hover .overlay {
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, .9);
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: inline-block;
-  box-sizing: border-box;
-}
 
 .proj h2 {
   margin-bottom: 0;
@@ -181,25 +166,48 @@ p {
 
 .proj p {
   width: 60%;
-  color: #ffffff;
-  font-size: 12px;
+  color: #f2f2f2;
+  font-size: 18px;
   text-align: center;
   margin: 10px auto;
 }
 
 .prj {
-  height: 200px;
+  height: 300px;
 }
 
 .proj-row {
-  margin-top: 50px;
+  padding: 30px 0;
+}
+.image {
+  position: relative;
+  display: inline-block;
+}
+
+.image:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  box-sizing: border-box;
+  transition: opacity 0.2s ease-in;
+  vertical-align: middle;
 }
 
 .show {
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-top: 0;
-  padding-bottom: 0;
+  width: 90%;
+  box-sizing: content-box;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-top: 30px;
 }
 
 .work p {
@@ -220,11 +228,13 @@ p {
 .skill-row {
   padding-top: 40px;
   marigin: 0 15px;
+  box-sizing: content-box;
+  justify-content: space-evenly;
 }
 
 .bar {
   height: 30px;
-  max-width: 500px;
+  max-width: 550px;
   margin: 0 auto 10px auto;
   line-height: 30px;
   font-size: 16px;
@@ -306,7 +316,7 @@ p {
 
 .container {
   padding-bottom: 60px;
-  width: 40%;
+  width: 50%;
 }
 
 .contact-me h3 {
@@ -321,7 +331,12 @@ label {
 .antispam {
   display: none;
 }
-
+.mt-2 {
+  text-align: left;
+}
+.button {
+  text-align: center;
+}
 .thnks {
   display: none;
 }
@@ -332,6 +347,7 @@ label {
   padding-bottom: 20px;
   margin-bottom: 0;
   background-color: #66BFBF;
+  text-align: center;
 }
 
 .copy {
@@ -343,28 +359,29 @@ label {
   border-radius: 6px;
   display: inline-block;
   cursor: pointer;
-  color: #ffffff;
+  color: #f2f2f2;
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   font-weight: bold;
-  padding: 6px 24px;
+  padding: 10px 40px;
   text-decoration: none;
   margin-top: 10px;
+  text-align: center;
 }
 
 .cv {
-  height: 100vh;
+  text-align: center;
   background-color: Black;
 }
 
 .hme {
-  position: absolute;
+  position: fixed;
   top: 30px;
   left: 30px;
 }
 
 .cvImg {
-  height: 750px;
+  width: 80%;
   padding: 10px;
 }
 
@@ -378,31 +395,43 @@ label {
 }
 
 .footer-link {
-  color: #ffffff;
+  color: #f2f2f2;
   display: inline-block;
   margin-left: 30px;
   margin-right: 30px;
-  text-decoration: none;
+  /* text-decoration: none; */
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .footer-link:hover {
   color: #EAF6F6;
+  text-decoration: none;
 }
 
 /* Media Queries */
-@media screen and (max-width: 600px) {
-  .drop img {
-    height: 60px;
+@media screen and (max-width: 1200px) {
+  .show {
+    display: block;
   }
-
-  .insideTop {
-    right: 40px;
+  .proj-row {
+    margin: auto;
   }
+}
+@media screen and (max-width: 700px) {
 
   .mine {
     font-size: 300%;
+  }
+  .dev {
+    font-size: 150%;
+  }
+  .insideTop {
+    padding-left: 60px;
+  }
+  .drop img {
+    height: 30px;
   }
 }
 
@@ -414,7 +443,9 @@ label {
 
   .top-container {
     background-size: contain;
-    background-position: bottom;
+    background-position: center;
+    background-color: #070707;
+    opacity: inherit;
   }
 
   .topTop {
@@ -480,7 +511,9 @@ label {
     height: 40px;
     font-size: 20px;
   }
-
+  .contact-form {
+    text-align: left;
+  }
   .footer-link {
     font-size: 1.5rem;
   }
