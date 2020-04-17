@@ -47,10 +47,6 @@ p {
   font-size: 1.1rem;
 }
 
-.drop a {
-  text-decoration: none;
-}
-
 #link:hover {
   color: #f2f2f2;
 }
@@ -92,7 +88,7 @@ p {
 
 .insideTop {
   display: inline-block;
-  padding-left: 80px;
+  padding-left: 70px;
 }
 
 .row {
@@ -107,7 +103,9 @@ p {
 .drop img {
   height: 45px;
 }
-
+.drop a {
+  text-decoration: none;
+}
 .labels {
   color: #f2f2f2;
   font-family: 'Montserrat', sans-serif;
@@ -231,7 +229,9 @@ p {
   box-sizing: content-box;
   justify-content: space-evenly;
 }
-
+.barG {
+  margin: auto;
+}
 .bar {
   height: 30px;
   max-width: 550px;
@@ -315,7 +315,7 @@ p {
 }
 
 .container {
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   width: 50%;
 }
 
@@ -371,7 +371,7 @@ label {
 
 .cv {
   text-align: center;
-  background-color: Black;
+  background-color: #070707;
 }
 
 .hme {
@@ -436,57 +436,59 @@ label {
 }
 
 /* iPhoneX */
-@media only screen and (min-device-width: 375px) and (min-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
   p {
     font-size: 200%;
   }
 
   .top-container {
     background-size: contain;
-    background-position: center;
+    background-position: bottom;
     background-color: #070707;
     opacity: inherit;
+    text-align: center;
   }
 
   .topTop {
-    left: 0;
-    right: 0;
+    padding-top: 25%;
+    padding-left: 0;
+    margin: auto;
   }
 
   .mine {
     font-size: 720%;
+    text-align: center;
   }
 
   .dev {
     font-size: 400%;
+    text-align: center;
   }
-
   .insideTop {
-    left: 0;
-    right: 0;
-    top: 600px;
+    padding:550px 0 0 0;
   }
 
   .labels {
-    display: block;
+    opacity: 1;
+    transition: none;
     padding-bottom: 20px;
+    font-size: 1.6rem;
   }
-
+  .drop {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
   .drop img {
-    height: 160px;
+    height: 120px;
   }
 
   .profile {
     width: 95%;
   }
 
-  .row {
-    display: block;
-  }
-
   .proj-row {
     width: 90%;
-    padding: 0;
+    padding:40px 0;
   }
 
   .prj {
@@ -504,18 +506,37 @@ label {
 
   .barG {
     margin: auto;
-    width: 85%;
+    width: 90%;
   }
 
   .bar {
     height: 40px;
-    font-size: 20px;
+    font-size: 24px;
+    line-height: 40px;
+    max-width: 70%;
+  }
+  .bar::before,
+  .bar::after {
+    height: 40px;
+  }
+  .col-md-6 {
+    flex: none;
+  }
+  .container {
+    width: 70%
   }
   .contact-form {
     text-align: left;
   }
+  .form-control {
+    font-size: 1.4rem;
+  }
+  .btn {
+    font-size: 35px;
+    padding: 20px 50px;
+  }
   .footer-link {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .hme {
@@ -535,37 +556,33 @@ label {
   }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+@media only screen and (min-device-height: 375px) and (min-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   p {
     font-size: 120%;
   }
 
-  .top-container {
-    min-height: 100vh;
-    height: 100vh;
-    background-position: center;
-  }
-
   .topTop {
-    top: 0;
-    left: 30px;
+    padding-left: 30px;
   }
 
   .mine {
-    font-size: 400%;
+    font-size: 320%;
   }
-
+  .dev {
+    font-size: 220%
+  }
   .insideTop {
-    top: 340px;
-    right: 25px;
+    padding-left: 20px;
   }
-
-  .drop img {
-    height: 70px;
+  .drop {
+    padding-top: 0;
   }
-
+  .drop .abt {
+    padding-left: 0;
+  }
   .labels {
-    display: block;
+    opacity: 1;
+    transition: none;
   }
 
   .profile {
@@ -574,10 +591,6 @@ label {
 
   .skill-row {
     display: block;
-    margin: auto;
-  }
-
-  .barG {
     margin: auto;
   }
 
@@ -591,112 +604,126 @@ label {
 }
 
 /* iPhone 6, 6s, 7, 8 */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  p {
-    font-size: 200%;
-  }
+@media only screen and (min-device-width: 375px) and (min-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 
-  h2 {
-    font-size: 300%;
-  }
+    p {
+      font-size: 200%;
+    }
 
-  .top-container {
-    background-size: contain;
-    background-position: bottom;
-  }
+    .top-container {
+      background-size: contain;
+      background-position: bottom;
+      background-color: #070707;
+      opacity: inherit;
+      text-align: center;
+    }
 
-  .topTop {
-    position: relative;
-    left: 0;
-    right: 0;
-    top: 80px;
-  }
+    .topTop {
+      padding-top: 15%;
+      padding-left: 0;
+      margin: auto;
+    }
 
-  .mine {
-    font-size: 720%;
-  }
+    .mine {
+      font-size: 720%;
+      text-align: center;
+    }
 
-  .dev {
-    font-size: 400%;
-  }
+    .dev {
+      font-size: 400%;
+      text-align: center;
+    }
+    .insideTop {
+      padding:370px 0 0 0;
+    }
 
-  .insideTop {
-    left: 0;
-    right: 0;
-    top: 420px;
-  }
+    .labels {
+      opacity: 1;
+      transition: none;
+      padding-bottom: 20px;
+      font-size: 1.6rem;
+    }
+    .drop {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    .drop img {
+      height: 120px;
+    }
 
-  .labels {
-    display: block;
-    padding-bottom: 20px;
-    font-size: 1.5rem;
-  }
+    .profile {
+      width: 95%;
+    }
 
-  .drop img {
-    height: 150px;
-  }
+    .proj-row {
+      width: 90%;
+      padding:40px 0;
+    }
 
-  .profile {
-    width: 95%;
-  }
+    .prj {
+      height: 420px;
+    }
 
-  .row {
-    display: block;
-  }
+    .col-md-6 {
+      max-width: 100%;
+      box-sizing: content-box;
+    }
 
-  .proj-row {
-    width: 90%;
-    padding: 30px;
-  }
+    .overlay p {
+      font-size: 1.6rem;
+    }
 
-  .prj {
-    height: 420px;
-  }
+    .barG {
+      margin: auto;
+      width: 90%;
+    }
 
-  .col-md-6 {
-    max-width: 100%;
-    box-sizing: content-box;
-  }
+    .bar {
+      height: 40px;
+      font-size: 24px;
+      line-height: 40px;
+      max-width: 70%;
+    }
+    .bar::before,
+    .bar::after {
+      height: 40px;
+    }
+    .col-md-6 {
+      flex: none;
+    }
+    .container {
+      width: 70%
+    }
+    .contact-form {
+      text-align: left;
+    }
+    .form-control {
+      font-size: 1.4rem;
+    }
+    .btn {
+      font-size: 35px;
+      padding: 20px 50px;
+    }
+    .footer-link {
+      font-size: 1.8rem;
+    }
 
-  .overlay p {
-    font-size: 1.6rem;
-  }
+    .hme {
+      left: 0;
+      right: 0;
+      top: 100px;
+    }
 
-  .barG {
-    margin: auto;
-    width: 85%;
-  }
+    .cvImg {
+      width: 95%;
+      height: auto;
+      padding-top: 400px;
+    }
 
-  .bar {
-    height: 40px;
-    font-size: 20px;
+    .lbl {
+      display: none;
+    }
   }
-
-  .container {
-    width: 60%;
-  }
-
-  .footer-link {
-    font-size: 1.5rem;
-  }
-
-  .hme {
-    left: 0;
-    right: 0;
-    top: 100px;
-  }
-
-  .cvImg {
-    width: 95%;
-    height: auto;
-    padding-top: 400px;
-  }
-
-  .lbl {
-    display: none;
-  }
-}
-
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   p {
     font-size: 120%;
@@ -753,7 +780,7 @@ label {
 }
 
 /* iPhone 6+,7+,8+ */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+/* @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .insideTop {
     top: 400px;
     right: 25px;
@@ -762,10 +789,10 @@ label {
   .lbl {
     display: none;
   }
-}
+} */
 
 /* Galaxy s4, s5, s6, note3 */
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+/* @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
   p {
     font-size: 200%;
   }
@@ -814,10 +841,6 @@ label {
     width: 95%;
   }
 
-  .row {
-    display: block;
-  }
-
   .proj-row {
     width: 90%;
     padding: 30px;
@@ -869,10 +892,10 @@ label {
   .lbl {
     display: none;
   }
-}
+} */
 
 /* Google Pixel xl */
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: portrait) {
+/* @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: portrait) {
   p {
     font-size: 200%;
   }
@@ -921,10 +944,6 @@ label {
     width: 95%;
   }
 
-  .row {
-    display: block;
-  }
-
   .proj-row {
     width: 90%;
     padding: 30px;
@@ -976,10 +995,10 @@ label {
   .lbl {
     display: none;
   }
-}
+} */
 
 /* google pixel2 xl */
-@media screen and (device-width: 823px) and (device-height: 411px) and (-webkit-device-pixel-ratio: 3.5) and (orientation: landscape) {
+/* @media screen and (device-width: 823px) and (device-height: 411px) and (-webkit-device-pixel-ratio: 3.5) and (orientation: landscape) {
   .top-container {
     min-height: 100vh;
     height: 100vh;
@@ -1030,10 +1049,10 @@ label {
   .lbl {
     display: none;
   }
-}
+} */
 
 /* Windows Phone */
-@media screen and (device-width: 480px) and (device-height: 800px) and (orientation: portrait) {
+/* @media screen and (device-width: 480px) and (device-height: 800px) and (orientation: portrait) {
   .drop img {
     height: 120px;
   }
@@ -1046,10 +1065,10 @@ label {
     width: 100%;
     padding-top: 200px;
   }
-}
+} */
 
 /* lg optimus */
-@media screen and (device-width: 384px) and (device-height: 640px) and (orientation: portrait) {
+/* @media screen and (device-width: 384px) and (device-height: 640px) and (orientation: portrait) {
   p {
     font-size: 200%;
   }
@@ -1096,10 +1115,6 @@ label {
 
   .profile {
     width: 95%;
-  }
-
-  .row {
-    display: block;
   }
 
   .proj-row {
@@ -1200,10 +1215,10 @@ label {
   .lbl {
     display: none;
   }
-}
+} */
 
 /* iPad 1,2,mini,air */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
   p {
     font-size: 200%;
   }
@@ -1243,10 +1258,6 @@ label {
 
   .profile {
     width: 95%;
-  }
-
-  .row {
-    display: block;
   }
 
   .proj-row {
@@ -1345,10 +1356,10 @@ label {
   .lbl {
     display: none;
   }
-}
+} */
 
 /* iPad Pro 12.9" */
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+/* @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   p {
     font-size: 1.5rem;
   }
