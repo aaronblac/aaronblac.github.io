@@ -1,6 +1,7 @@
 html {
   overflow-x: hidden;
 }
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -104,9 +105,11 @@ p {
 .drop img {
   height: 45px;
 }
+
 .drop a {
   text-decoration: none;
 }
+
 .labels {
   color: #f2f2f2;
   font-family: 'Montserrat', sans-serif;
@@ -157,7 +160,6 @@ p {
   text-align: left;
 }
 
-
 .proj h2 {
   margin-bottom: 0;
   padding-bottom: 0;
@@ -178,6 +180,7 @@ p {
 .proj-row {
   padding: 30px 0;
 }
+
 .image {
   position: relative;
   display: inline-block;
@@ -230,9 +233,11 @@ p {
   box-sizing: content-box;
   justify-content: space-evenly;
 }
+
 .barG {
   margin: auto;
 }
+
 .bar {
   height: 30px;
   max-width: 550px;
@@ -332,12 +337,15 @@ label {
 .antispam {
   display: none;
 }
+
 .mt-2 {
   text-align: left;
 }
+
 .button {
   text-align: center;
 }
+
 .thnks {
   display: none;
 }
@@ -415,21 +423,25 @@ label {
   .show {
     display: block;
   }
+
   .proj-row {
     margin: auto;
   }
 }
-@media screen and (max-width: 700px) {
 
+@media screen and (max-width: 700px) {
   .mine {
     font-size: 300%;
   }
+
   .dev {
     font-size: 150%;
   }
+
   .insideTop {
     padding-left: 60px;
   }
+
   .drop img {
     height: 30px;
   }
@@ -465,8 +477,9 @@ label {
     font-size: 400%;
     text-align: center;
   }
+
   .insideTop {
-    padding:550px 0 0 0;
+    padding: 550px 0 0 0;
   }
 
   .labels {
@@ -475,10 +488,12 @@ label {
     padding-bottom: 20px;
     font-size: 1.6rem;
   }
+
   .drop {
     padding-left: 40px;
     padding-right: 40px;
   }
+
   .drop img {
     height: 120px;
   }
@@ -489,7 +504,7 @@ label {
 
   .proj-row {
     width: 90%;
-    padding:40px 0;
+    padding: 40px 0;
   }
 
   .prj {
@@ -516,26 +531,33 @@ label {
     line-height: 40px;
     max-width: 70%;
   }
+
   .bar::before,
   .bar::after {
     height: 40px;
   }
+
   .col-md-6 {
     flex: none;
   }
+
   .container {
     width: 70%
   }
+
   .contact-form {
     text-align: left;
   }
+
   .form-control {
     font-size: 1.4rem;
   }
+
   .btn {
     font-size: 35px;
     padding: 20px 50px;
   }
+
   .footer-link {
     font-size: 1.8rem;
   }
@@ -569,18 +591,23 @@ label {
   .mine {
     font-size: 320%;
   }
+
   .dev {
     font-size: 220%
   }
+
   .insideTop {
     padding-left: 20px;
   }
+
   .drop {
     padding-top: 0;
   }
+
   .drop .abt {
     padding-left: 0;
   }
+
   .labels {
     opacity: 1;
     transition: none;
@@ -594,6 +621,10 @@ label {
     display: block;
     margin: auto;
   }
+ .skill-row {
+    display: block;
+    width: 100%;
+  }
 
   .footer-link {
     font-size: 1.2rem;
@@ -603,8 +634,9 @@ label {
     display: none;
   }
 }
+
 /* iPhone 5, SE  */
-@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait){
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
   p {
     font-size: 200%;
   }
@@ -633,8 +665,9 @@ label {
     font-size: 400%;
     text-align: center;
   }
+
   .insideTop {
-    padding:370px 0 0 0;
+    padding: 370px 0 0 0;
   }
 
   .labels {
@@ -643,10 +676,12 @@ label {
     padding-bottom: 20px;
     font-size: 1.6rem;
   }
+
   .drop {
     padding-left: 40px;
     padding-right: 40px;
   }
+
   .drop img {
     height: 120px;
   }
@@ -657,7 +692,7 @@ label {
 
   .proj-row {
     width: 90%;
-    padding:40px 0;
+    padding: 40px 0;
   }
 
   .prj {
@@ -684,26 +719,33 @@ label {
     line-height: 40px;
     max-width: 70%;
   }
+
   .bar::before,
   .bar::after {
     height: 40px;
   }
+
   .col-md-6 {
     flex: none;
   }
+
   .container {
     width: 70%
   }
+
   .contact-form {
     text-align: left;
   }
+
   .form-control {
     font-size: 1.4rem;
   }
+
   .btn {
     font-size: 35px;
     padding: 20px 50px;
   }
+
   .footer-link {
     font-size: 1.8rem;
   }
@@ -724,176 +766,150 @@ label {
     display: none;
   }
 }
+
 /* iPhone 6, 6s, 7, 8 */
 @media only screen and (min-device-width: 375px) and (min-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-
-    p {
-      font-size: 200%;
-    }
-
-    .top-container {
-      background-size: contain;
-      background-position: bottom;
-      background-color: #08050b;
-      mix-blend-mode: darken;
-      opacity: inherit;
-      text-align: center;
-    }
-
-    .topTop {
-      padding-top: 15%;
-      padding-left: 0;
-      margin: auto;
-    }
-
-    .mine {
-      font-size: 720%;
-      text-align: center;
-    }
-
-    .dev {
-      font-size: 400%;
-      text-align: center;
-    }
-    .insideTop {
-      padding:370px 0 0 0;
-    }
-
-    .labels {
-      opacity: 1;
-      transition: none;
-      padding-bottom: 20px;
-      font-size: 1.6rem;
-    }
-    .drop {
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-    .drop img {
-      height: 120px;
-    }
-
-    .profile {
-      width: 95%;
-    }
-
-    .proj-row {
-      width: 90%;
-      padding:40px 0;
-    }
-
-    .prj {
-      height: 420px;
-    }
-
-    .col-md-6 {
-      max-width: 100%;
-      box-sizing: content-box;
-    }
-
-    .overlay p {
-      font-size: 1.6rem;
-    }
-
-    .barG {
-      margin: auto;
-      width: 90%;
-    }
-
-    .bar {
-      height: 40px;
-      font-size: 24px;
-      line-height: 40px;
-      max-width: 70%;
-    }
-    .bar::before,
-    .bar::after {
-      height: 40px;
-    }
-    .col-md-6 {
-      flex: none;
-    }
-    .container {
-      width: 70%
-    }
-    .contact-form {
-      text-align: left;
-    }
-    .form-control {
-      font-size: 1.4rem;
-    }
-    .btn {
-      font-size: 35px;
-      padding: 20px 50px;
-    }
-    .footer-link {
-      font-size: 1.8rem;
-    }
-
-    .hme {
-      left: 0;
-      right: 0;
-      top: 100px;
-    }
-
-    .cvImg {
-      width: 95%;
-      height: auto;
-      padding-top: 400px;
-    }
-
-    .lbl {
-      display: none;
-    }
-  }
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   p {
-    font-size: 120%;
+    font-size: 200%;
   }
 
   .top-container {
-    min-height: 100vh;
-    height: 100vh;
-    background-position: center;
+    background-size: contain;
+    background-position: bottom;
+    background-color: #08050b;
+    mix-blend-mode: darken;
+    opacity: inherit;
+    text-align: center;
   }
 
   .topTop {
-    top: 20px;
-    left: 30px;
+    padding-top: 15%;
+    padding-left: 0;
+    margin: auto;
   }
 
   .mine {
+    font-size: 720%;
+    text-align: center;
+  }
+
+  .dev {
     font-size: 400%;
+    text-align: center;
   }
 
   .insideTop {
-    top: 400px;
-    right: 25px;
-  }
-
-  .drop img {
-    height: 70px;
+    padding: 370px 0 0 0;
   }
 
   .labels {
-    display: block;
+    opacity: 1;
+    transition: none;
+    padding-bottom: 20px;
+    font-size: 1.6rem;
+  }
+
+  .drop {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .drop img {
+    height: 120px;
   }
 
   .profile {
-    width: 90%;
+    width: 95%;
   }
 
-  .skill-row {
-    display: block;
-    margin: auto;
+  .proj-row {
+    width: 90%;
+    padding: 40px 0;
+  }
+
+  .prj {
+    height: 420px;
+  }
+
+  .col-md-6 {
+    max-width: 100%;
+    box-sizing: content-box;
+  }
+
+  .overlay p {
+    font-size: 1.6rem;
   }
 
   .barG {
     margin: auto;
+    width: 90%;
+  }
+
+  .bar {
+    height: 40px;
+    font-size: 24px;
+    line-height: 40px;
+    max-width: 70%;
+  }
+
+  .bar::before,
+  .bar::after {
+    height: 40px;
+  }
+
+  .col-md-6 {
+    flex: none;
+  }
+
+  .container {
+    width: 70%
+  }
+
+  .contact-form {
+    text-align: left;
+  }
+
+  .form-control {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    font-size: 35px;
+    padding: 20px 50px;
   }
 
   .footer-link {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+  }
+
+  .hme {
+    left: 0;
+    right: 0;
+    top: 100px;
+  }
+
+  .cvImg {
+    width: 95%;
+    height: auto;
+    padding-top: 400px;
+  }
+
+  .lbl {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .labels {
+    opacity: 1;
+  }
+
+  .topTop {
+    padding-left: 40px;
+  }
+
+  .insideTop {
+    padding-left: 30px;
   }
 
   .lbl {
@@ -903,9 +919,15 @@ label {
 
 /* iPhone 6+,7+,8+ */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-.topTop {
-  padding-left: 40px;
-}
+  .topTop {
+    padding-left: 40px;
+  }
+  .drop img {
+    height: 45px;
+  }
+  .labels {
+    opacity: 1;
+  }
   .insideTop {
     padding-left: 30px;
   }
@@ -945,8 +967,9 @@ label {
     font-size: 400%;
     text-align: center;
   }
+
   .insideTop {
-    padding:370px 0 0 0;
+    padding: 370px 0 0 0;
   }
 
   .labels {
@@ -955,10 +978,12 @@ label {
     padding-bottom: 20px;
     font-size: 1.6rem;
   }
+
   .drop {
     padding-left: 40px;
     padding-right: 40px;
   }
+
   .drop img {
     height: 120px;
   }
@@ -969,7 +994,7 @@ label {
 
   .proj-row {
     width: 90%;
-    padding:40px 0;
+    padding: 40px 0;
   }
 
   .prj {
@@ -996,26 +1021,33 @@ label {
     line-height: 40px;
     max-width: 70%;
   }
+
   .bar::before,
   .bar::after {
     height: 40px;
   }
+
   .col-md-6 {
     flex: none;
   }
+
   .container {
     width: 70%
   }
+
   .contact-form {
     text-align: left;
   }
+
   .form-control {
     font-size: 1.4rem;
   }
+
   .btn {
     font-size: 35px;
     padding: 20px 50px;
   }
+
   .footer-link {
     font-size: 1.8rem;
   }
@@ -1037,17 +1069,20 @@ label {
   }
 }
 
-@media screen and (device-width: 640px) and (device-height: 360px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape){
+@media screen and (device-width: 640px) and (device-height: 360px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
   .mine {
     font-size: 300%;
   }
+
   .drop img {
     height: 45px;
   }
+
   .labels {
     opacity: 1;
   }
 }
+
 /* Google Pixel xl */
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: portrait) {
   p {
@@ -1078,8 +1113,9 @@ label {
     font-size: 400%;
     text-align: center;
   }
+
   .insideTop {
-    padding:370px 0 0 0;
+    padding: 370px 0 0 0;
   }
 
   .labels {
@@ -1088,10 +1124,12 @@ label {
     padding-bottom: 20px;
     font-size: 1.6rem;
   }
+
   .drop {
     padding-left: 40px;
     padding-right: 40px;
   }
+
   .drop img {
     height: 120px;
   }
@@ -1102,7 +1140,7 @@ label {
 
   .proj-row {
     width: 90%;
-    padding:40px 0;
+    padding: 40px 0;
   }
 
   .prj {
@@ -1129,26 +1167,33 @@ label {
     line-height: 40px;
     max-width: 70%;
   }
+
   .bar::before,
   .bar::after {
     height: 40px;
   }
+
   .col-md-6 {
     flex: none;
   }
+
   .container {
     width: 70%
   }
+
   .contact-form {
     text-align: left;
   }
+
   .form-control {
     font-size: 1.4rem;
   }
+
   .btn {
     font-size: 35px;
     padding: 20px 50px;
   }
+
   .footer-link {
     font-size: 1.8rem;
   }
@@ -1169,25 +1214,31 @@ label {
     display: none;
   }
 }
-@media screen and (device-width: 640px) and (device-height: 360px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape){
+
+@media screen and (device-width: 640px) and (device-height: 360px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape) {
   .mine {
     font-size: 300%;
   }
+
   .drop img {
     height: 45px;
   }
+
   .labels {
     opacity: 1;
   }
 }
+
 /* google pixel2 xl */
 @media screen and (device-width: 823px) and (device-height: 411px) and (-webkit-device-pixel-ratio: 3.5) and (orientation: landscape) {
   .mine {
     font-size: 300%;
   }
+
   .drop img {
     height: 45px;
   }
+
   .labels {
     opacity: 1;
   }
@@ -1195,15 +1246,17 @@ label {
 
 /* Windows Phone */
 @media screen and (device-width: 800px) and (device-height: 480px) and (orientation: landscape) {
-.mine {
-  font-size: 300%;
-}
-.drop img {
-  height: 45px;
-}
-.labels {
-  opacity: 1;
-}
+  .mine {
+    font-size: 300%;
+  }
+
+  .drop img {
+    height: 45px;
+  }
+
+  .labels {
+    opacity: 1;
+  }
 }
 
 /* lg optimus */
@@ -1236,8 +1289,9 @@ label {
     font-size: 400%;
     text-align: center;
   }
+
   .insideTop {
-    padding:370px 0 0 0;
+    padding: 370px 0 0 0;
   }
 
   .labels {
@@ -1246,10 +1300,12 @@ label {
     padding-bottom: 20px;
     font-size: 1.6rem;
   }
+
   .drop {
     padding-left: 40px;
     padding-right: 40px;
   }
+
   .drop img {
     height: 120px;
   }
@@ -1260,7 +1316,7 @@ label {
 
   .proj-row {
     width: 90%;
-    padding:40px 0;
+    padding: 40px 0;
   }
 
   .prj {
@@ -1287,26 +1343,33 @@ label {
     line-height: 40px;
     max-width: 70%;
   }
+
   .bar::before,
   .bar::after {
     height: 40px;
   }
+
   .col-md-6 {
     flex: none;
   }
+
   .container {
     width: 70%
   }
+
   .contact-form {
     text-align: left;
   }
+
   .form-control {
     font-size: 1.4rem;
   }
+
   .btn {
     font-size: 35px;
     padding: 20px 50px;
   }
+
   .footer-link {
     font-size: 1.8rem;
   }
@@ -1326,19 +1389,21 @@ label {
   .lbl {
     display: none;
   }
-
 }
 
 @media screen and (device-width: 640px) and (device-height: 384px) and (orientation: landscape) {
   .mine {
     font-size: 300%;
   }
+
   .drop img {
     height: 45px;
   }
+
   .labels {
     opacity: 1;
   }
+
   .skill-row {
     display: block;
   }
@@ -1349,6 +1414,7 @@ label {
   .topTop {
     padding-top: 10%;
   }
+
   .insideTop {
     padding-top: 200px;
   }
@@ -1358,32 +1424,38 @@ label {
   .topTop {
     padding-left: 50px;
   }
+
   .insideTop {
     padding-left: 40px;
   }
+
   .mine {
     font-size: 300%;
   }
+
   .drop img {
     height: 45px;
   }
+
   .labels {
     opacity: 1;
   }
 }
 
 /* iPad Pro 12.9" */
-
 @media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   p {
     font-size: 1.4rem;
   }
+
   .dev {
     font-size: 300%;
   }
+
   .drop img {
     height: 60px;
   }
+
   .labels {
     opacity: 1;
   }
