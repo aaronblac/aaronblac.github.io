@@ -309,7 +309,7 @@ p {
 }
 
 .bar6::after {
-  max-width: 85%;
+  max-width: 75%;
 }
 
 .bar7::after {
