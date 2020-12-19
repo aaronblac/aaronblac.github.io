@@ -145,7 +145,6 @@ p {
   width: 80%;
   margin: auto;
   padding-top: 80px;
-
 }
 
 .profile h2 {
@@ -224,101 +223,37 @@ p {
   height: 30px;
 }
 
+.sklzList {
+    width: 60%;
+    margin: auto;
+    text-align: left;
+}
 .graph-cont {
   margin: 0;
+  padding: 0;
 }
 
+.sklzCol1, .sklzCol2 {
+    max-width: 290px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    background-color:  #66BFBF;
+    
+    border-radius: 10px;
+    
+    color:  #f2f2f2
+}
+li {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
 .skill-row {
   padding-top: 40px;
   marigin: 0 15px;
   box-sizing: content-box;
   justify-content: space-evenly;
-}
-
-.barG {
-  margin: auto;
-}
-
-.bar {
-  height: 30px;
-  max-width: 550px;
-  margin: 0 auto 10px auto;
-  line-height: 30px;
-  font-size: 16px;
-  color: white;
-  padding: 0 10px;
-  position: relative;
-  text-align: left;
-}
-
-.bar::before {
-  content: '';
-  width: 100%;
-  position: absolute;
-  left: 0;
-  height: 30px;
-  top: 0;
-  z-index: -2;
-  background: #ecf0f1;
-  border-radius: 5px;
-}
-
-.bar::after {
-  content: '';
-  background: #66BFBF;
-  height: 30px;
-  transition: 0.7s;
-  display: block;
-  width: 100%;
-  -webkit-animation: bar-before 1 1.8s;
-  position: absolute;
-  top: 0;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  left: 0;
-  z-index: -1;
-}
-
-@-webkit-keyframes bar-before {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 100%;
-  }
-}
-
-.bar1::after {
-  max-width: 85%;
-}
-
-.bar2::after {
-  max-width: 60%;
-}
-
-.bar3::after {
-  max-width: 45%;
-}
-
-.bar4::after {
-  max-width: 70%;
-}
-
-.bar5::after {
-  max-width: 80%;
-}
-
-.bar6::after {
-  max-width: 65%;
-}
-
-.bar7::after {
-  max-width: 95%;
-}
-
-.bar8::after {
-  max-width: 90%;
 }
 
 .container {
@@ -391,7 +326,6 @@ label {
 }
 
 .cvImg {
-  width: 80%;
   padding: 10px;
 }
 
@@ -419,7 +353,30 @@ label {
   text-decoration: none;
 }
 
+.gameBody {
+    background-color: #000000;
+    color: #ffffff;
+}
+.game {
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.gameHeader{
+background-color: #66BFBF;
+text-align: center;
+}
+
+.dropGame{
+display: inline-block;
+padding-top: 20px;
+padding-left: 40px;
+padding-right: 40px;
+
+}
 /* Media Queries */
+
 @media screen and (max-width: 1200px) {
   .show {
     display: block;
@@ -430,6 +387,14 @@ label {
   }
 }
 
+@media screen and (max-width: 767px) {
+    .sklzCol1 ul{
+        border-radius: 10px 10px 0px 0px;
+    }
+    .sklzCol2 ul{
+        border-radius: 0px 0px 10px 10px;
+    }
+}
 @media screen and (max-width: 700px) {
   .mine {
     font-size: 300%;
@@ -521,26 +486,22 @@ label {
     font-size: 1.6rem;
   }
 
-  .barG {
-    margin: auto;
-    width: 90%;
-  }
-
-  .bar {
-    height: 40px;
-    font-size: 24px;
-    line-height: 40px;
-    max-width: 70%;
-  }
-
-  .bar::before,
-  .bar::after {
-    height: 40px;
-  }
+  
 
   .col-md-6 {
     flex: none;
   }
+
+  ul {
+        font-size: 24px;
+  }
+  
+   .sklzCol1 ul{
+        border-radius: 15px 15px 0px 0px;
+    }
+    .sklzCol2 ul{
+        border-radius: 0px 0px 15px 15px;
+    }
 
   .container {
     width: 70%
@@ -619,11 +580,8 @@ label {
   }
 
   .skill-row {
-    display: block;
+    
     margin: auto;
-  }
- .skill-row {
-    display: block;
     width: 100%;
   }
 
@@ -709,22 +667,16 @@ label {
     font-size: 1.6rem;
   }
 
-  .barG {
-    margin: auto;
-    width: 90%;
+ ul {
+        font-size: 24px;
   }
-
-  .bar {
-    height: 40px;
-    font-size: 24px;
-    line-height: 40px;
-    max-width: 70%;
-  }
-
-  .bar::before,
-  .bar::after {
-    height: 40px;
-  }
+  
+   .sklzCol1 ul{
+        border-radius: 15px 15px 0px 0px;
+    }
+    .sklzCol2 ul{
+        border-radius: 0px 0px 15px 15px;
+    }
 
   .col-md-6 {
     flex: none;
@@ -841,22 +793,16 @@ label {
     font-size: 1.6rem;
   }
 
-  .barG {
-    margin: auto;
-    width: 90%;
+  ul {
+        font-size: 24px;
   }
-
-  .bar {
-    height: 40px;
-    font-size: 24px;
-    line-height: 40px;
-    max-width: 70%;
-  }
-
-  .bar::before,
-  .bar::after {
-    height: 40px;
-  }
+  
+   .sklzCol1 ul{
+        border-radius: 15px 15px 0px 0px;
+    }
+    .sklzCol2 ul{
+        border-radius: 0px 0px 15px 15px;
+    }
 
   .col-md-6 {
     flex: none;
@@ -1011,22 +957,16 @@ label {
     font-size: 1.6rem;
   }
 
-  .barG {
-    margin: auto;
-    width: 90%;
+ ul {
+        font-size: 24px;
   }
-
-  .bar {
-    height: 40px;
-    font-size: 24px;
-    line-height: 40px;
-    max-width: 70%;
-  }
-
-  .bar::before,
-  .bar::after {
-    height: 40px;
-  }
+  
+   .sklzCol1 ul{
+        border-radius: 15px 15px 0px 0px;
+    }
+    .sklzCol2 ul{
+        border-radius: 0px 0px 15px 15px;
+    }
 
   .col-md-6 {
     flex: none;
@@ -1157,22 +1097,6 @@ label {
     font-size: 1.6rem;
   }
 
-  .barG {
-    margin: auto;
-    width: 90%;
-  }
-
-  .bar {
-    height: 40px;
-    font-size: 24px;
-    line-height: 40px;
-    max-width: 70%;
-  }
-
-  .bar::before,
-  .bar::after {
-    height: 40px;
-  }
 
   .col-md-6 {
     flex: none;
@@ -1333,22 +1257,16 @@ label {
     font-size: 1.6rem;
   }
 
-  .barG {
-    margin: auto;
-    width: 90%;
+  ul {
+        font-size: 24px;
   }
-
-  .bar {
-    height: 40px;
-    font-size: 24px;
-    line-height: 40px;
-    max-width: 70%;
-  }
-
-  .bar::before,
-  .bar::after {
-    height: 40px;
-  }
+  
+   .sklzCol1 ul{
+        border-radius: 15px 15px 0px 0px;
+    }
+    .sklzCol2 ul{
+        border-radius: 0px 0px 15px 15px;
+    }
 
   .col-md-6 {
     flex: none;

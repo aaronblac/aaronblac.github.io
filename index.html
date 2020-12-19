@@ -2,6 +2,26 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171500746-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-171500746-1');
+</script>
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-171500746-1', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
   <meta charset="utf-8">
   <meta name="description" content="Aaron Black, Web Developer and Entrepreneur.  I am the one you want to hire for your next web development project. Websites, Web Apps and much more.">
   <title>Aaron Black Web Developer Profile</title>
@@ -22,7 +42,7 @@
     <div class="topTop">
 
       <h1 class="mine">AARON BLACK</h1>
-      <h3 class="dev">Web Developer</h3>
+      <h3 class="dev">Software Engineer</h3>
     </div>
 
     <div class="insideTop">
@@ -65,24 +85,24 @@
     </div>
     <hr>
     <div id="projects" class="sect proj">
-      <h2>My Projects</h2>
+      <h2>My Web Dev Projects</h2>
 
       <div class="row show">
         <div class="proj-row ">
-          <div class="image">
+          <div class="image" onmouseover="ga('send','event', 'overlay', 'hover', 'tinpurr');" >
             <img class="tpr prj" src="images/Tinpurr.png" alt="tinpurr site">
             <div class="overlay">
-              <p>A parody web page for a cat dating app. It was a project I used to expand my Bootstrap knowledge. I used HTML, CSS and Bootstrap. Link to <a class="pj" href="https://catlove.netlify.com/" target="_blank">Live Site.</a></p>
+              <p>A parody web page for a cat dating app. It was a project I used to expand my Bootstrap knowledge. I used HTML, CSS and Bootstrap. Link to <a class="pj" href="https://catlove.netlify.com/" target="_blank" onclick="ga('send', 'event', 'link', 'click', 'tinpurrLink');", >Live Site.</a></p>
             </div>
           </div>
         </div>
 
         <div class="proj-row ">
           <div class="image">
-            <img class="nws prj" src="images/newsletter.png" alt="surf newsletter">
+            <img class="bft prj" src="images/Barefoot.png" alt="simon game">
             <div class="overlay">
-              <p>This is an app I built for a newsletter signup for a Surfboard shaper. I used HTML, CSS, Node.js with Express. Mailchimp API was used to store the data collected from the form. It was deployed using Hiroku. <a class="pj"
-                  href="https://aqueous-coast-11749.herokuapp.com/" target="_blank">View live here.</a></p>
+              <p>This is a responsive site built with Wix for a digital media and marketing company. View <a class="pj" href="https://www.barefootlifemedia.com/"
+                  target="_blank">Live Site.</a></p>
             </div>
           </div>
         </div>
@@ -99,10 +119,10 @@
 
         <div class="proj-row ">
           <div class="image">
-            <img class="smn prj" src="images/simon.png" alt="simon game">
+             <img class="nws prj" src="images/newsletter.png" alt="surf newsletter">
             <div class="overlay">
-              <p>This is a classic Simon game built with HTML, CSS, and jQuery. View <a class="pj" href="https://supersimon.netlify.com"
-                  target="_blank">Live Site.</a></p>
+              <p>This is an app I built for a newsletter signup for a Surfboard shaper. I used HTML, CSS, Node.js with Express. Mailchimp API was used to store the data collected from the form. It was deployed using Hiroku. <a class="pj"
+                  href="https://aqueous-coast-11749.herokuapp.com/" target="_blank">View live here.</a></p>
             </div>
           </div>
         </div>
@@ -112,26 +132,79 @@
       <p>This profile page was built from scratch using HTML, CSS, PHP, Javascript and Bootstrap.</p>
     </div>
     <hr>
+     <div id="projects" class="sect proj">
+      <h2>My Game Dev Projects</h2>
 
-    <div id="skills" class="sect sklz">
-      <h2>My Skills</h2>
-      <div class="row skill-row ">
-        <div class="barG col-md-6 col-sm-12">
-          <div class="graph-cont">
-            <div class="bar bar1">HTML & CSS</div>
-            <div class="bar bar2">Javascript & jQuery</div>
-            <div class="bar bar3">Node.js</div>
-            <div class="bar bar4">Bootstrap</div>
+      <div class="row show">
+        <div class="proj-row ">
+          <div class="image" onmouseover="ga('send','event', 'overlay', 'hover', 'tinpurr');" >
+            <img class="prj" src="images/PlatformHustleImg.png" alt="tinpurr site">
+            <div class="overlay">
+              <p>A fun platformer game made with C# and the Unity Game Engine. Play <a class="pj" href="PlatformHustle.html" target="_blank" onclick="ga('send', 'event', 'link', 'click', 'platformHustleLink');",>Platform Hustle</a> on desktop or laptop.</p>
+            </div>
           </div>
         </div>
 
-        <div class="barG col-md-6 col-sm-12">
-          <div class="graph-cont">
-            <div class="bar bar5">Responsive Design</div>
-            <div class="bar bar6">UX Design</div>
-            <div class="bar bar7">Team Leadership & Management</div>
-            <div class="bar bar8">Training & Development</div>
+        <div class="proj-row ">
+          <div class="image">
+            <img class="prj" src="images/SpaceShooterImg.png" alt="simon game">
+            <div class="overlay">
+              <p>This is a 2D Space Shooter game, my first game created in Unity.  Built in C# and Unity Game Engine. Play <a class="pj" href="SpaceShooter.html"
+                  target="_blank">Galaxy Shooter</a> on desktop or laptop.</p>
+            </div>
           </div>
+        </div>
+
+        <div class="proj-row ">
+          <div class="image">
+            <img class="prj" src="images/GreatFleeceImg.png" alt="hiero site">
+            <div class="overlay">
+              <p>A fun 3D sleuth game created with Unity 3D, C#, and Cinemachine. Play <a class="pj" href="TheGreatFleece.html"
+                  target="_blank">The Great Fleece</a> on desktop or laptop.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-row ">
+          <div class="image">
+             <img class="prj" src="images/DungeonImg.png" alt="surf newsletter">
+            <div class="overlay">
+              <p>This is a mobile game I built for iOS and Android platforms.  It was built in C# and the Unity Game Engine.</p>
+              <p> <a class="pj"
+                  href="" target="_blank">Apple Store</a><a href="" target= "_blank">Play Store</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>Complete list of projects can be found at <a href = "https://www.blackverseproductions.com" target = "_blank" class="pj">www.BlackverseProductions.com</a></p>
+    <hr>
+
+    <div id="skills" class="sect sklzList">
+      <h2>My Skills</h2>
+      <div class="row skill-row ">
+        <div class="col-md-6 col-sm-12 sklzCol1">
+          <ul class="graph-cont">
+            <li>HTML & CSS</li>
+            <li>Javascript & jQuery</li>
+            <li>Node.js</li>
+            <li>C#</li>
+            <li>Unity</li>
+            <li>React.js</li>
+            <li>WordPress</li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-sm-12 sklzCol2">
+          <ul class="graph-cont">
+            <li>Wix</li>
+            <li>Bootstrap</li>
+            <li>UX Design</li>
+            <li>Figma</li>
+            <li>Responsive Design</li>
+            <li>Google Analytics</li>
+            <li>Google Tag Manager</li>
+          </ul>
         </div>
       </div>
     </div>

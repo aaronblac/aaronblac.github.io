@@ -25,7 +25,7 @@ $(document).ready(function() {
           email.val('');
           phone.val('');
           message.val('');
-          info.html('Message sent!').css('color', '#66bfbf').slideDown();
+          info.html('Message sent!').css('color', '#66BFBF').slideDown();
         } else {
           info.html('Could not send mail! Sorry!').css('color', 'red').slideDown();
         }
