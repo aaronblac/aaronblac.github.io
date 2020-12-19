@@ -57,6 +57,22 @@ p {
   font-weight: bold;
 }
 
+.res{
+  position: absolute;
+  top: 16px;
+  right:40px;
+  color: #f2f2f2;
+  font-family: 'Montserrat', sans-serif;
+  
+
+}
+
+.res:hover{
+  text-decoration: none;
+  color: #11999E;
+}
+
+
 .top-container {
   background-image: url(../images/macbook.jpg);
   background-repeat: no-repeat;
@@ -224,9 +240,9 @@ p {
 }
 
 .sklzList {
-    width: 60%;
-    margin: auto;
-    text-align: left;
+  width: 60%;
+  margin: auto;
+  text-align: left;
 }
 .graph-cont {
   margin: 0;
@@ -234,20 +250,19 @@ p {
 }
 
 .sklzCol1, .sklzCol2 {
-    max-width: 290px;
+  max-width: 290px;
 }
 ul {
-    list-style: none;
-    padding: 0;
-    background-color:  #66BFBF;
-    
-    border-radius: 10px;
-    
-    color:  #f2f2f2
+  list-style: none;
+  padding: 0;
+  background-color:  #66BFBF;
+  border-radius: 10px;
+  color:  #f2f2f2
 }
 li {
-    padding-top: 10px;
-    padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-weight: bold;
 }
 .skill-row {
   padding-top: 40px;
@@ -388,12 +403,12 @@ padding-right: 40px;
 }
 
 @media screen and (max-width: 767px) {
-    .sklzCol1 ul{
-        border-radius: 10px 10px 0px 0px;
-    }
-    .sklzCol2 ul{
-        border-radius: 0px 0px 10px 10px;
-    }
+  .sklzCol1 ul{
+    border-radius: 10px 10px 0px 0px;
+  }
+  .sklzCol2 ul{
+    border-radius: 0px 0px 10px 10px;
+  }
 }
 @media screen and (max-width: 700px) {
   .mine {
@@ -439,6 +454,10 @@ padding-right: 40px;
     text-align: center;
   }
 
+  .res{
+    top: 24px;
+    font-size: 160%;
+  }
   .dev {
     font-size: 400%;
     text-align: center;
@@ -493,15 +512,16 @@ padding-right: 40px;
   }
 
   ul {
-        font-size: 24px;
+    font-size: 24px;
   }
   
-   .sklzCol1 ul{
-        border-radius: 15px 15px 0px 0px;
-    }
-    .sklzCol2 ul{
-        border-radius: 0px 0px 15px 15px;
-    }
+  .sklzCol1 ul{
+    border-radius: 15px 15px 0px 0px;
+  }
+  .sklzCol2 ul{
+    border-radius: 0px 0px 15px 15px;
+    margin-top: -1px;
+  }
 
   .container {
     width: 70%
@@ -620,6 +640,11 @@ padding-right: 40px;
     text-align: center;
   }
 
+   .res{
+    top: 24px;
+    font-size: 160%;
+    }
+
   .dev {
     font-size: 400%;
     text-align: center;
@@ -667,16 +692,17 @@ padding-right: 40px;
     font-size: 1.6rem;
   }
 
- ul {
+  ul {
         font-size: 24px;
   }
   
-   .sklzCol1 ul{
-        border-radius: 15px 15px 0px 0px;
+  .sklzCol1 ul{
+     border-radius: 15px 15px 0px 0px;
     }
-    .sklzCol2 ul{
-        border-radius: 0px 0px 15px 15px;
-    }
+  .sklzCol2 ul{
+    border-radius: 0px 0px 15px 15px;
+    margin-top: -1px;
+  }
 
   .col-md-6 {
     flex: none;
@@ -746,6 +772,11 @@ padding-right: 40px;
     text-align: center;
   }
 
+  .res{
+    top: 24px;
+    font-size: 160%;
+  }
+
   .dev {
     font-size: 400%;
     text-align: center;
@@ -802,6 +833,7 @@ padding-right: 40px;
     }
     .sklzCol2 ul{
         border-radius: 0px 0px 15px 15px;
+        margin-top: -2px;
     }
 
   .col-md-6 {
@@ -910,6 +942,11 @@ padding-right: 40px;
     text-align: center;
   }
 
+  .res{
+    top: 24px;
+    font-size: 160%;
+  }
+
   .dev {
     font-size: 400%;
     text-align: center;
@@ -957,16 +994,17 @@ padding-right: 40px;
     font-size: 1.6rem;
   }
 
- ul {
-        font-size: 24px;
+  ul {
+    font-size: 24px;
   }
   
-   .sklzCol1 ul{
-        border-radius: 15px 15px 0px 0px;
-    }
-    .sklzCol2 ul{
-        border-radius: 0px 0px 15px 15px;
-    }
+  .sklzCol1 ul{
+    border-radius: 15px 15px 0px 0px;
+  }
+  .sklzCol2 ul{
+    border-radius: 0px 0px 15px 15px;
+    margin-top: -1px;
+  }
 
   .col-md-6 {
     flex: none;
@@ -1048,6 +1086,11 @@ padding-right: 40px;
   .mine {
     font-size: 720%;
     text-align: center;
+  }
+
+  .res{
+    top: 24px;
+    font-size: 160%;
   }
 
   .dev {
@@ -1210,6 +1253,10 @@ padding-right: 40px;
     text-align: center;
   }
 
+  .res{
+    top: 24px;
+    font-size: 160%;
+  }
   .dev {
     font-size: 400%;
     text-align: center;
@@ -1266,6 +1313,7 @@ padding-right: 40px;
     }
     .sklzCol2 ul{
         border-radius: 0px 0px 15px 15px;
+        margin-top: -1;
     }
 
   .col-md-6 {
